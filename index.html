@@ -1,1 +1,1819 @@
-https://sites.google.com/d/1vdt8hNkfXBssPBF1DEavHVt2HijVPYUn/p/1_3o6wq4ll2VucfyMC236MW3iYpSbquJj/edit
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M-2-8 金澤職人夢｜青年百億海外圓夢基金計畫・申請者導覽手冊</title>
+  <!-- Google Fonts: 思源宋體 & 思源黑體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-paper: #FAF8F5;
+      --bg-card: #FFFFFF;
+      --bg-subtle: #F2EDE4;
+      --text-ink: #1F1E1C;
+      --text-muted: #5C5852;
+      --gold-primary: #B48327;
+      --gold-light: #DFC387;
+      --gold-bg: #FBF6EC;
+      --vermilion: #9E2A2B;
+      --indigo: #264653;
+      --border-color: #E5DEC9;
+      --shadow-sm: 0 2px 8px rgba(31, 30, 28, 0.05);
+      --shadow-md: 0 6px 20px rgba(31, 30, 28, 0.08);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-paper);
+      color: var(--text-ink);
+      line-height: 1.7;
+      background-image: radial-gradient(#DFD6C5 0.6px, transparent 0.6px);
+      background-size: 24px 24px;
+    }
+
+    h1, h2, h3, .serif {
+      font-family: 'Noto Serif TC', serif;
+    }
+
+    a {
+      color: var(--gold-primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--vermilion);
+    }
+
+    /* 頂部導覽列 */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250, 248, 245, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text-ink);
+    }
+
+    .brand-badge {
+      background: var(--gold-primary);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.1rem;
+      flex-wrap: wrap;
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      color: var(--text-ink);
+      padding: 0.25rem 0.4rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-primary);
+      border-bottom-color: var(--gold-primary);
+    }
+
+    /* Hero 區塊 */
+    .hero {
+      background: linear-gradient(135deg, #24201C 0%, #3A3128 60%, #523E27 100%);
+      color: #FAF8F5;
+      padding: 3.5rem 1.25rem;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 4px solid var(--gold-primary);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -5%;
+      top: -20%;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      border: 1px solid rgba(223, 195, 135, 0.22);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .audience-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(180, 131, 39, 0.25);
+      border: 1px solid var(--gold-light);
+      color: var(--gold-light);
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.85rem, 4vw, 2.75rem);
+      line-height: 1.3;
+      margin-bottom: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+
+    .hero p {
+      max-width: 740px;
+      color: #E2DBD0;
+      font-size: 1.02rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(223, 195, 135, 0.25);
+      border-radius: var(--radius);
+      padding: 1rem 1.15rem;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--gold-light);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .stat-value {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* 主內容區 */
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+    }
+
+    .section-header {
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--gold-primary);
+      padding-left: 0.9rem;
+    }
+
+    .section-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .section-header h2 {
+      font-size: 1.65rem;
+      color: var(--text-ink);
+      margin-top: 0.15rem;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 0.3rem;
+    }
+
+    /* 卡片與網格 */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.4rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card h3 {
+      font-size: 1.18rem;
+      margin-bottom: 0.85rem;
+      color: var(--text-ink);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      font-size: 0.94rem;
+    }
+
+    .info-list li {
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    .info-list li::before {
+      content: "◆";
+      color: var(--gold-primary);
+      font-size: 0.7rem;
+      position: absolute;
+      left: 0;
+      top: 0.25rem;
+    }
+
+    /* 警告與規範提示框 */
+    .notice-banner {
+      margin-top: 1.25rem;
+      background: #FDF6F6;
+      border: 1px solid #E8C5C5;
+      border-left: 4px solid var(--vermilion);
+      border-radius: var(--radius);
+      padding: 1.15rem 1.35rem;
+      font-size: 0.92rem;
+    }
+
+    .notice-banner h4 {
+      color: var(--vermilion);
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    /* 見習機構標籤雲 */
+    .org-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .org-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.75rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .org-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .org-city {
+      font-size: 0.78rem;
+      background: var(--bg-subtle);
+      color: var(--text-muted);
+      padding: 0.15rem 0.55rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.35rem;
+    }
+
+    .org-links {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 0.4rem;
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.83rem;
+      font-weight: 500;
+      padding: 0.38rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-paper);
+      color: var(--text-ink);
+      transition: all 0.2s;
+    }
+
+    .btn-link:hover {
+      background: var(--gold-primary);
+      color: #fff;
+      border-color: var(--gold-primary);
+    }
+
+    .btn-map {
+      background: #EEF5F0;
+      border-color: #C5DEC9;
+      color: #1E5631;
+    }
+
+    .btn-map:hover {
+      background: #1E5631;
+      color: #fff;
+      border-color: #1E5631;
+    }
+
+    /* 日期點選選單 */
+    .date-selector-wrap {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1rem;
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .date-selector-label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 0.65rem;
+      display: block;
+    }
+
+    .date-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .date-btn {
+      border: 1px solid var(--border-color);
+      background: var(--bg-paper);
+      color: var(--text-ink);
+      padding: 0.42rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.18s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 74px;
+    }
+
+    .date-btn span.day-num {
+      font-weight: 700;
+      font-size: 0.78rem;
+      color: var(--gold-primary);
+    }
+
+    .date-btn:hover {
+      border-color: var(--gold-primary);
+      background: var(--gold-bg);
+    }
+
+    .date-btn.active {
+      background: var(--gold-primary);
+      color: #fff;
+      border-color: var(--gold-primary);
+    }
+
+    .date-btn.active span.day-num {
+      color: #FFF6DC;
+    }
+
+    /* 行程卡片 */
+    .itinerary-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .day-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-left: 5px solid var(--gold-primary);
+      border-radius: var(--radius);
+      padding: 1.35rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s;
+    }
+
+    .day-card.kaga {
+      border-left-color: var(--vermilion);
+    }
+
+    .day-card.kanazawa {
+      border-left-color: var(--gold-primary);
+    }
+
+    .day-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .day-badge {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--vermilion);
+      background: #FDF2F2;
+      padding: 0.2rem 0.65rem;
+      border-radius: 6px;
+    }
+
+    .day-card.kanazawa .day-badge {
+      color: #8A6114;
+      background: var(--gold-bg);
+    }
+
+    .area-tag {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: var(--bg-subtle);
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+    }
+
+    .day-title {
+      font-size: 1.18rem;
+      margin-bottom: 0.6rem;
+      color: var(--text-ink);
+    }
+
+    .day-activities {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .day-purpose {
+      background: var(--bg-paper);
+      border-radius: 8px;
+      padding: 0.7rem 0.9rem;
+      font-size: 0.89rem;
+      color: var(--text-muted);
+      margin-bottom: 0.85rem;
+      border: 1px dashed var(--border-color);
+    }
+
+    .spot-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* 行前準備清單 */
+    .checklist-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .progress-wrap {
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .progress-bar-bg {
+      height: 10px;
+      background: var(--bg-subtle);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 0.35rem;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold-primary), var(--vermilion));
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .checklist-groups {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .check-group {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.2rem;
+    }
+
+    .check-group h4 {
+      font-size: 1rem;
+      color: var(--gold-primary);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      padding: 0.45rem 0;
+      cursor: pointer;
+      font-size: 0.92rem;
+    }
+
+    .check-item input[type="checkbox"] {
+      margin-top: 0.28rem;
+      accent-color: var(--gold-primary);
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .check-item.checked span {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    .inline-form {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    input[type="text"], input[type="number"], select, textarea {
+      font-family: inherit;
+      font-size: 0.92rem;
+      padding: 0.55rem 0.8rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--text-ink);
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--gold-primary);
+    }
+
+    .btn-primary {
+      background: var(--gold-primary);
+      color: #fff;
+      border: none;
+      padding: 0.55rem 1.1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: #966B1D;
+    }
+
+    .btn-secondary {
+      background: var(--bg-subtle);
+      color: var(--text-ink);
+      border: 1px solid var(--border-color);
+      padding: 0.45rem 0.9rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.85rem;
+    }
+
+    .btn-secondary:hover {
+      background: #E5DEC9;
+    }
+
+    .btn-danger {
+      background: transparent;
+      color: var(--vermilion);
+      border: 1px solid #E8C5C5;
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      cursor: pointer;
+    }
+
+    .btn-danger:hover {
+      background: var(--vermilion);
+      color: #fff;
+    }
+
+    /* 預算與收支記帳 */
+    .budget-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.9rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .budget-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .budget-box small {
+      color: var(--text-muted);
+      display: block;
+      font-size: 0.82rem;
+    }
+
+    .budget-box strong {
+      font-size: 1.3rem;
+      color: var(--text-ink);
+    }
+
+    .budget-box.highlight strong {
+      color: var(--gold-primary);
+    }
+
+    .grant-detail-toggle {
+      margin-bottom: 1.25rem;
+    }
+
+    .grant-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .grant-item {
+      background: var(--bg-paper);
+      padding: 0.65rem 0.85rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .grant-item strong {
+      color: var(--text-ink);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .ledger-table-wrap {
+      overflow-x: auto;
+      margin-top: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      background: var(--bg-card);
+    }
+
+    th, td {
+      padding: 0.7rem 0.85rem;
+      border-bottom: 1px solid var(--border-color);
+      text-align: left;
+    }
+
+    th {
+      background: var(--bg-subtle);
+      font-weight: 700;
+    }
+
+    .amount-in {
+      color: #1E5631;
+      font-weight: 700;
+    }
+
+    .amount-out {
+      color: var(--vermilion);
+      font-weight: 700;
+    }
+
+    /* 心得筆記欄 */
+    .notes-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .note-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-top: 3px solid var(--indigo);
+      border-radius: var(--radius);
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .note-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .note-tag {
+      font-size: 0.75rem;
+      background: #EBF2F5;
+      color: var(--indigo);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .note-body {
+      font-size: 0.92rem;
+      white-space: pre-wrap;
+      color: var(--text-ink);
+    }
+
+    .note-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      padding-top: 0.5rem;
+    }
+
+    /* 浮動提示與確認對話框（替代 alert / confirm） */
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #24201C;
+      color: #FAF8F5;
+      border-left: 4px solid var(--gold-primary);
+      padding: 0.75rem 1.2rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      box-shadow: var(--shadow-md);
+      z-index: 999;
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: all 0.25s ease;
+    }
+
+    .toast-msg.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(31, 30, 28, 0.45);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 1rem;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: var(--shadow-md);
+    }
+
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.6rem;
+      margin-top: 1.25rem;
+    }
+
+    footer {
+      background: #24201C;
+      color: #BFB8AC;
+      text-align: center;
+      padding: 2rem 1.25rem;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 640px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .date-btn {
+        min-width: 64px;
+        padding: 0.35rem 0.55rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 頂部導覽列 -->
+  <header>
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-badge">M-2-8</span>
+        <span class="serif">金澤職人夢｜海外圓夢申請導覽</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#overview">申請資格與機構</a>
+        <a href="#itinerary">17日行程選單</a>
+        <a href="#checklist">行前準備清單</a>
+        <a href="#budget">預算花費記錄</a>
+        <a href="#notes">申請與心得筆記</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero 橫幅 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="audience-pill">🎯 專為「對計畫有興趣的青年申請者」設計之完整導覽｜主題類別：(二) 創業育成與產業交流</div>
+      <h1 class="serif">青年百億海外圓夢基金計畫<br>海外翱翔組｜M-2-8 金澤職人夢</h1>
+      <p>
+        深入日本石川縣加賀與金澤工藝重鎮，走訪九谷燒百年窯元、山中漆器技術中心、金澤金箔龍頭企業與加賀象嵌美術館。從傳統技法實作到現代品牌行銷，探索日本職人精神與地方創生體系。
+      </p>
+      <div class="hero-stats">
+        <div class="stat-box">
+          <span class="stat-label">見習地點</span>
+          <span class="stat-value">日本・石川縣（加賀／金澤）</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">圓夢期間（含飛行日）</span>
+          <span class="stat-value">116/06/20 － 07/06（17日）</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">預計錄取名額</span>
+          <span class="stat-value">10 名青年</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">本案獎勵金總經費</span>
+          <span class="stat-value">NT$ 250,000（自理 27,017）</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- 一、申請資格與見習機構 -->
+    <section id="overview">
+      <div class="section-header">
+        <span class="section-tag">Applicant Guide</span>
+        <h2>申請資格評估與見習機構一覽</h2>
+        <p class="section-desc">確認自身是否符合必要與優先條件，並預先認識本次參訪的 7 大核心日本工藝機構。</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>📋 必要申請條件（缺一不可）</h3>
+          <ul class="info-list">
+            <li><strong>國籍與年齡：</strong>具中華民國國籍之 18 歲至 30 歲青年。</li>
+            <li><strong>全程參與義務：</strong>能全程參與 17 日海外見習，並配合完成成果紀錄與社群宣傳等義務。</li>
+            <li><strong>行前培訓要求：</strong>須參加錄取後、出國前 2 週內共 2 次培訓（每次約 4 小時、合計約 8 小時，實體／線上同步），未參加視同放棄資格。</li>
+            <li><strong>基礎語言能力：</strong>具備基礎日語會話與聽力（約 JLPT N4 / CEFR A2 以上），或具備良好英語溝通能力（約 CEFR B1）。</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>⭐ 遴選加分與優先條件</h3>
+          <ul class="info-list">
+            <li><strong>專業背景或強烈熱忱：</strong>工藝、美術、設計、陶藝、漆藝、金工、染織、文資保存或文創相關科系；非本科系但對本次研習懷有「無論如何都想投入學習」之強烈意願者亦予接受。</li>
+            <li><strong>文化熱忱：</strong>對日本傳統工藝（金箔、漆器、九谷燒等）、職人精神及地方文化傳承有濃厚興趣。</li>
+            <li><strong>進階語言：</strong>日語能力優於 N4 者（N3、N2、N1）於遴選時加分。</li>
+            <li><strong>紀錄與傳播力：</strong>具備良好溝通力、社群媒體經營或影像紀錄能力（第 2 次行前培訓將討論個人紀錄片拍攝企畫）。</li>
+            <li><strong>多元關懷：</strong>弱勢身分青年（經濟弱勢、原住民、偏遠地區、新住民子女等）從優考量。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="notice-banner">
+        <h4>⚠️ 簡章重要義務與獎助金規範提醒</h4>
+        <ul class="info-list">
+          <li><strong>簽證辦理時限：</strong>錄取者須於圓夢期間出發日前取得所需簽證，逾期未取得視同放棄錄取資格。</li>
+          <li><strong>全程出席與獎助金追回規定：</strong>出國圓夢期間不得因個人因素請假或無故缺席；若無法全程參與、未依計畫學習或違反法令，將視同未完成計畫並須繳回部分或全部獎勵金。</li>
+        </ul>
+      </div>
+
+      <div class="org-grid">
+        <div class="org-card">
+          <div>
+            <span class="org-city">石川縣金澤市</span>
+            <h4>株式會社箔一（Hakuichi）</h4>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin-top:0.35rem;">金澤金箔代表企業，研習 1 萬分之 1 毫米金箔製造工序、工廠品管、商品化與品牌經營。</p>
+          </div>
+          <div class="org-links">
+            <a class="btn-link btn-map" href="https://www.google.com/maps/search/?api=1&query=株式会社箔一+金沢市" target="_blank" rel="noopener">📍 Google Maps</a>
+            <a class="btn-link" href="https://www.hakuichi.co.jp/" target="_blank" rel="noopener">🔗 官方網站</a>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div>
+            <span class="org-city">石川縣能美市</span>
+            <h4>福島武山工房</h4>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin-top:0.35rem;">九谷燒「赤繪細描」代表工房之一，觀摩極致精細的赤繪技法與職人工房交流。</p>
+          </div>
+          <div class="org-links">
+            <a class="btn-link btn-map" href="https://www.google.com/maps/search/?api=1&query=福島武山工房+石川県能美市" target="_blank" rel="noopener">📍 Google Maps</a>
+            <a class="btn-link" href="https://www.instagram.com/fukushima_buzan_kutani/" target="_blank" rel="noopener">🔗 Instagram</a>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div>
+            <span class="org-city">石川縣能美市</span>
+            <h4>陶藝晄（陶芸晄）</h4>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin-top:0.35rem;">九谷燒作家工房，辦理九谷燒技法示範、當代作家對談與工房實務研修。</p>
+          </div>
+          <div class="org-links">
+            <a class="btn-link btn-map" href="https://www.google.com/maps/search/?api=1&query=陶芸晄+石川県能美市" target="_blank" rel="noopener">📍 Google Maps</a>
+            <a class="btn-link" href="https://kutani-midori.jimdofree.com/" target="_blank" rel="noopener">🔗 官方網站</a>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div>
+            <span class="org-city">石川縣小松市</span>
+            <h4>宮吉製陶（株式会社宮吉製陶）</h4>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin-top:0.35rem;">九谷燒現代窯元，深入學習窯元營運管理、製程導覽與製作實務研修。</p>
+          </div>
+          <div class="org-links">
+            <a class="btn-link btn-map" href="https://www.google.com/maps/search/?api=1&query=株式会社宮吉製陶+石川県小松市" target="_blank" rel="noopener">📍 Google Maps</a>
+            <a class="btn-link" href="https://miyayoshiseitou.jp/" target="_blank" rel="noopener">🔗 官方網站</a>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div>
+            <span class="org-city">石川縣小松市</span>
+            <h4>錦山窯（展示空間「嘸旦-MUTAN-」）</h4>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin-top:0.35rem;">傳承 110 餘年之九谷燒「金彩」重要窯元，學習頂級空間美學與工藝品牌經營。</p>
+          </div>
+          <div class="org-links">
+            <a class="btn-link btn-map" href="https://www.google.com/maps/search/?api=1&query=錦山窯+石川県小松市" target="_blank" rel="noopener">📍 Google Maps</a>
+            <a class="btn-link" href="https://kinzangama.com/" target="_blank" rel="noopener">🔗 官方網站</a>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div>
+            <span class="org-city">石川縣加賀市</span>
+            <h4>石川縣立山中漆器產業技術中心</h4>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin-top:0.35rem;">日本重要山中漆器公設育成設施，學習「轆轤車削」與「蒔繪」指導體系及實作。</p>
+          </div>
+          <div class="org-links">
+            <a class="btn-link btn-map" href="https://www.google.com/maps/search/?api=1&query=石川県立山中漆器産業技術センター" target="_blank" rel="noopener">📍 Google Maps</a>
+            <a class="btn-link" href="https://yamanaka696.org/" target="_blank" rel="noopener">🔗 官方網站</a>
+          </div>
+        </div>
+
+        <div class="org-card">
+          <div>
+            <span class="org-city">石川縣金澤市</span>
+            <h4>宗桂會館（公益財團法人宗桂会）</h4>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin-top:0.35rem;">加賀象嵌專門美術館與推廣據點，探究金屬鑲嵌技法與跨世代職人社群傳承。</p>
+          </div>
+          <div class="org-links">
+            <a class="btn-link btn-map" href="https://www.google.com/maps/search/?api=1&query=宗桂会館+石川県金沢市" target="_blank" rel="noopener">📍 Google Maps</a>
+            <a class="btn-link" href="https://www.soukeikai.or.jp/" target="_blank" rel="noopener">🔗 官方網站</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 二、17 日行程日期選單與景點地圖 -->
+    <section id="itinerary">
+      <div class="section-header">
+        <span class="section-tag">17-Day Itinerary</span>
+        <h2>17 日見習行程表（可點選日期篩選）</h2>
+        <p class="section-desc">點擊下方日期按鈕可檢視當日研習主題、學習目的，並直接開啟各景點之 Google Maps 位置。</p>
+      </div>
+
+      <div class="date-selector-wrap">
+        <span class="date-selector-label">📅 點選見習日期（116年6月20日 － 7月6日）：</span>
+        <div class="date-pills" id="datePills"></div>
+      </div>
+
+      <div class="itinerary-list" id="itineraryList"></div>
+    </section>
+
+    <!-- 三、行前準備與申請檢核清單 -->
+    <section id="checklist">
+      <div class="section-header">
+        <span class="section-tag">Preparation Checklist</span>
+        <h2>申請與行前準備清單（可勾選儲存）</h2>
+        <p class="section-desc">依據簡章規範整理之申請文件、語言門檻、行前培訓與日本工房實作防護清單（勾選狀態自動儲存於瀏覽器）。</p>
+      </div>
+
+      <div class="card">
+        <div class="checklist-header">
+          <div class="progress-wrap">
+            <div style="display:flex;justify-content:space-between;font-size:0.9rem;font-weight:700;">
+              <span>目前準備完成度</span>
+              <span id="progressText">0 / 0 (0%)</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="progressBar"></div>
+            </div>
+          </div>
+          <button type="button" class="btn-secondary" onclick="openResetModal()">重置預設清單</button>
+        </div>
+
+        <div class="checklist-groups" id="checklistContainer"></div>
+
+        <form class="inline-form" onsubmit="addCheckItem(event)">
+          <select id="newCheckCategory">
+            <option value="申請資格與文件">申請資格與文件</option>
+            <option value="行前培訓與企畫">行前培訓與企畫</option>
+            <option value="工房實作與防護">工房實作與防護</option>
+            <option value="證件保險與其他">證件保險與其他</option>
+          </select>
+          <input type="text" id="newCheckText" placeholder="輸入自訂準備項目（例如：準備作品集 PDF、確認日幣現鈔）..." style="flex:1;min-width:220px;" required />
+          <button type="submit" class="btn-primary">＋ 新增項目</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 四、預算花費記錄 -->
+    <section id="budget">
+      <div class="section-header">
+        <span class="section-tag">Budget & Expense Tracker</span>
+        <h2>獎助經費說明與個人收支記帳</h2>
+        <p class="section-desc">本案總經費 250,000 元，其中 222,983 元由合作單位支應當地食宿交通與研習費；27,017 元為青年自理額度。你可在此試算與記錄收支。</p>
+      </div>
+
+      <div class="budget-summary">
+        <div class="budget-box">
+          <small>合作單位統籌經費</small>
+          <strong>NT$ 222,983</strong>
+        </div>
+        <div class="budget-box">
+          <small>青年自理獎勵金基準</small>
+          <strong>NT$ 27,017</strong>
+        </div>
+        <div class="budget-box">
+          <small>目前記錄總支出</small>
+          <strong id="totalExpense" style="color:var(--vermilion);">NT$ 0</strong>
+        </div>
+        <div class="budget-box highlight">
+          <small>目前預算結餘</small>
+          <strong id="budgetBalance">NT$ 27,017</strong>
+        </div>
+      </div>
+
+      <div class="card grant-detail-toggle">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+          <h3 style="margin:0;">🏛️ 合作單位辦理項目明細（共 NT$ 222,983，無需青年自費）</h3>
+          <button type="button" class="btn-secondary" id="toggleGrantBtn" onclick="toggleGrantDetails()">展開 / 收合細目</button>
+        </div>
+        <div class="grant-grid" id="grantDetailsGrid" style="display:none;">
+          <div class="grant-item"><strong>生活費與跨城市交通</strong>包含見習期間餐費、住宿費、當地交通及跨城市見習之大眾運輸／租車費用。</div>
+          <div class="grant-item"><strong>機構參訪與研習註冊費</strong>九谷燒美術館導覽、石川縣九谷燒技術中心研修、CERABO KUTANI 等機構體驗費。</div>
+          <div class="grant-item"><strong>專業翻譯與講師費</strong>包含行前培訓講師鐘點費，以及日本專業課程、工房參訪之隨行口譯費用。</div>
+          <div class="grant-item"><strong>隨團業師與行政軟硬體</strong>包含隨團業師機票生活輔導費、設備與場地使用費、教材印刷及行政雜支。</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>💰 新增個人收支明細</h3>
+        <form class="inline-form" onsubmit="addLedgerItem(event)">
+          <select id="ledgerType">
+            <option value="expense">支出 (-)</option>
+            <option value="income">收入 / 補助 (+)</option>
+          </select>
+          <select id="ledgerCategory">
+            <option value="機票交通">機票交通（基準 20,000）</option>
+            <option value="旅平險與醫療險">旅平險與醫療險（基準 1,800）</option>
+            <option value="生活零用金">生活零用金（基準 5,217）</option>
+            <option value="工藝體驗與材料">工藝體驗與材料</option>
+            <option value="自由日餐飲交通">自由日餐飲交通</option>
+            <option value="其他項目">其他項目</option>
+          </select>
+          <input type="text" id="ledgerNote" placeholder="項目說明（如：桃園-小松來回機票）" style="flex:1;min-width:180px;" required />
+          <input type="number" id="ledgerAmount" placeholder="金額 (TWD)" min="1" required style="width:130px;" />
+          <button type="submit" class="btn-primary">記錄一筆</button>
+        </form>
+
+        <div class="ledger-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>日期</th>
+                <th>類型</th>
+                <th>分類</th>
+                <th>項目說明</th>
+                <th>金額 (TWD)</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody id="ledgerBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 五、申請動機與見習心得筆記欄 -->
+    <section id="notes">
+      <div class="section-header">
+        <span class="section-tag">Reflection & Notes</span>
+        <h2>申請動機與見習心得筆記欄</h2>
+        <p class="section-desc">撰寫你的申請計畫書靈感、紀錄片拍攝企畫構想，或每日工房見習觀察（支援一鍵匯出純文字檔）。</p>
+      </div>
+
+      <div class="card">
+        <form onsubmit="addNote(event)" style="display:flex;flex-direction:column;gap:0.75rem;">
+          <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
+            <select id="noteTag">
+              <option value="申請書靈感">申請書靈感</option>
+              <option value="紀錄片拍攝企畫">紀錄片拍攝企畫</option>
+              <option value="九谷燒觀察">九谷燒觀察</option>
+              <option value="山中漆器筆記">山中漆器筆記</option>
+              <option value="金箔與加賀象嵌">金箔與加賀象嵌</option>
+              <option value="每日見習心得">每日見習心得</option>
+            </select>
+            <input type="text" id="noteTitle" placeholder="筆記標題（例如：為什麼想申請金澤職人夢？）" style="flex:1;min-width:220px;" required />
+          </div>
+          <textarea id="noteContent" rows="3" placeholder="寫下你的想法、問題或見習觀察..." required></textarea>
+          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;">
+            <button type="submit" class="btn-primary">儲存筆記</button>
+            <button type="button" class="btn-secondary" onclick="exportNotes()">📥 匯出全部筆記 (.txt)</button>
+          </div>
+        </form>
+
+        <div class="notes-list" id="notesList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>資料來源：教育部青年發展署「青年百億海外圓夢基金計畫－海外翱翔組 M-2-8 金澤職人夢」簡章（以上內容教育部青年發展署及合作單位保有調整及最終解釋之權利）</p>
+  </footer>
+
+  <!-- 柔和提示通知框 -->
+  <div id="toastMsg" class="toast-msg" role="status"></div>
+
+  <!-- 自訂重置確認對話框 -->
+  <div id="resetModal" class="modal-backdrop">
+    <div class="modal-box">
+      <h3 style="margin-bottom:0.5rem;">重置檢核清單</h3>
+      <p style="font-size:0.92rem;color:var(--text-muted);">確定要將行前準備清單重置為簡章預設的 10 項檢核項目嗎？你自訂新增的項目將會被清除。</p>
+      <div class="modal-actions">
+        <button type="button" class="btn-secondary" onclick="closeResetModal()">取消</button>
+        <button type="button" class="btn-primary" onclick="confirmResetChecklist()">確定重置</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 提示訊息輔助函式
+    let toastTimer = null;
+    function showToast(message) {
+      const toast = document.getElementById("toastMsg");
+      toast.textContent = message;
+      toast.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2800);
+    }
+
+    // 1. 完整 17 日行程資料（依據 M-2-8 簡章）
+    const itineraryData = [
+      {
+        day: "Day 1",
+        date: "116/06/20",
+        shortDate: "06/20",
+        area: "臺灣 → 加賀地區",
+        regionClass: "kaga",
+        title: "啟程：飛往石川縣小松機場・加賀地區入住",
+        activities: "臺灣出發 → 抵達日本小松機場 → 移動至加賀地區飯店辦理入住，為 17 日職人研修揭開序幕。",
+        purpose: "適應當地環境與生活動線，建立團隊默契並確認後續研習安全規範。",
+        spots: [
+          { name: "小松機場 (Komatsu Airport)", query: "小松空港" },
+          { name: "石川縣加賀市", query: "石川県加賀市" }
+        ]
+      },
+      {
+        day: "Day 2",
+        date: "116/06/21",
+        shortDate: "06/21",
+        area: "能美市（加賀區域）",
+        regionClass: "kaga",
+        title: "九谷燒百年色彩體系專業工藝產業導覽與研究",
+        activities: "能美市九谷燒美術館・五彩館 & 淺藏五十吉紀念館見學；石川縣九谷燒技術中心（含技術研修所）設施見學。",
+        purpose: "【九谷五彩之色彩表現與青年獨立支援基礎設施】檢證巨匠名品之美學、無鉛和繪具最新科學研究，以及支援年輕作家自立之公設育成體系。",
+        spots: [
+          { name: "能美市九谷燒美術館・五彩館", query: "能美市九谷焼美術館 五彩館" },
+          { name: "淺藏五十吉紀念館", query: "浅蔵五十吉記念館" },
+          { name: "石川縣九谷燒技術中心", query: "石川県九谷焼技術センター" }
+        ]
+      },
+      {
+        day: "Day 3",
+        date: "116/06/22",
+        shortDate: "06/22",
+        area: "能美市・小松市",
+        regionClass: "kaga",
+        title: "從瓷土到現代窯元：瓷土基礎與窯元營運",
+        activities: "CERABO KUTANI（九谷陶瓷實驗室）課堂學習瓷土製造基礎並進行手捏陶體驗；宮吉製陶（株式会社宮吉製陶）專業工藝產業導覽與研究。",
+        purpose: "理解九谷燒原料「花坂陶石」到瓷土的製程科學，並於現代窯元學習窯元營運、製程管理與製作實務。",
+        spots: [
+          { name: "CERABO KUTANI 九谷陶瓷實驗室", query: "CERABO KUTANI" },
+          { name: "宮吉製陶", query: "株式会社宮吉製陶 小松市" }
+        ]
+      },
+      {
+        day: "Day 4",
+        date: "116/06/23",
+        shortDate: "06/23",
+        area: "小松市・能美市",
+        regionClass: "kaga",
+        title: "九谷燒赤繪細描核心實作日",
+        activities: "石川縣立九谷燒美術館專業導覽；福島武山工房、陶藝晄（陶芸晄）之工房專業工藝指導與交流。",
+        purpose: "深入工坊觀察並體驗「赤繪細描」等九谷燒代表技法，串聯歷史起源與現代作家實踐。",
+        spots: [
+          { name: "石川縣立九谷燒美術館", query: "石川県立九谷焼美術館" },
+          { name: "福島武山工房", query: "福島武山工房 能美市" },
+          { name: "陶藝晄 (陶芸晄)", query: "陶芸晄 能美市" }
+        ]
+      },
+      {
+        day: "Day 5",
+        date: "116/06/24",
+        shortDate: "06/24",
+        area: "加賀市・小松市",
+        regionClass: "kaga",
+        title: "再興九谷的瓷窯構造與金彩品牌行銷",
+        activities: "上午參觀九谷燒窯跡展示館（現存最古老九谷燒登窯）；下午參訪名門錦山窯展示空間「嘸旦-MUTAN-」進行導覽與交流。",
+        purpose: "【再興九谷之磁器窯構造與極限金彩意匠之品牌經營】學習百年登窯構造與傳承 110 餘年之金彩技術，探討傳統工藝如何昇華為現代藝術與頂級空間美學。",
+        spots: [
+          { name: "九谷燒窯跡展示館", query: "九谷焼窯跡展示館" },
+          { name: "錦山窯「嘸旦-MUTAN-」", query: "錦山窯 MUTAN 小松市" }
+        ]
+      },
+      {
+        day: "Day 6",
+        date: "116/06/25",
+        shortDate: "06/25",
+        area: "加賀市（山中溫泉）",
+        regionClass: "kaga",
+        title: "山中漆器・轆轤車削與蒔繪之系統驗證",
+        activities: "終日駐留「石川縣立山中漆器產業技術中心」，調查轆轤車削（ろくろ挽き）與蒔繪之指導體系與手冊化機制，並接受實作指導。",
+        purpose: "【轆轤車削與蒔繪技術之系統驗證】深入了解公設專業職人育成機構如何將傳統師徒制轉化為系統化訓練教材。",
+        spots: [
+          { name: "石川縣立山中漆器產業技術中心", query: "石川県立山中漆器産業技術センター" }
+        ]
+      },
+      {
+        day: "Day 7",
+        date: "116/06/26",
+        shortDate: "06/26",
+        area: "加賀 → 金澤市",
+        regionClass: "kanazawa",
+        title: "跨城市移動：加賀前往金澤・階段性資料整理",
+        activities: "由加賀地區移動至金澤市區飯店辦理入住，下午進行第一週見習資料蒐集與報告整理。",
+        purpose: "統整加賀地區（九谷燒與山中漆器）田野調查素材，銜接金澤市區研習主題。",
+        spots: [
+          { name: "金澤車站周邊", query: "金沢駅" }
+        ]
+      },
+      {
+        day: "Day 8",
+        date: "116/06/27",
+        shortDate: "06/27",
+        area: "金澤市",
+        regionClass: "kanazawa",
+        title: "自主調查日與第一週成果初稿整理",
+        activities: "自由時間：金澤市內自主文化調查與休息調整，同步整理第一週學習內容（含書面報告及個人紀錄片影片初稿）。",
+        purpose: "透過自主街區觀察培養問題意識，確保影音與文字紀錄進度穩健推進。",
+        spots: [
+          { name: "金澤21世紀美術館（自主調查參考）", query: "金沢21世紀美術館" },
+          { name: "近江町市場（自主調查參考）", query: "近江町市場 金沢" }
+        ]
+      },
+      {
+        day: "Day 9",
+        date: "116/06/28",
+        shortDate: "06/28",
+        area: "金澤市（兼六園周邊）",
+        regionClass: "kanazawa",
+        title: "傳統工藝 36 業種與現代市場流通",
+        activities: "於石川縣立傳統工藝產業館（いしかわ生活工芸ミュージアム）參加特別講座與導覽；參訪金澤・Craft 廣坂（クラフト広坂）。",
+        purpose: "【傳統工藝 36 業種之色彩體系與現代工藝市場調查】全面掌握石川與金澤多樣傳統工藝基礎知識，觀察當代生活工藝品的定價與通路策略。",
+        spots: [
+          { name: "石川縣立傳統工藝產業館", query: "石川県立伝統産業工芸館" },
+          { name: "金澤・Craft 廣坂", query: "クラフト広坂 金沢" }
+        ]
+      },
+      {
+        day: "Day 10",
+        date: "116/06/29",
+        shortDate: "06/29",
+        area: "金澤市（小立野・卯辰山）",
+        regionClass: "kanazawa",
+        title: "高等教育中的技術語言化與公設孵化器",
+        activities: "金澤美術工藝大學（工藝科）技術交流；金澤卯辰山工藝工房專業導覽與工藝產業研究。",
+        purpose: "【高等教育中技術之語言化與公設孵化器】比較藝術大學教育制度與公設駐村孵化器如何支援年輕工藝家獨立創業與地方創生。",
+        spots: [
+          { name: "金澤美術工藝大學", query: "金沢美術工芸大学" },
+          { name: "金澤卯辰山工藝工房", query: "金沢卯辰山工芸工房" }
+        ]
+      },
+      {
+        day: "Day 11",
+        date: "116/06/30",
+        shortDate: "06/30",
+        area: "金澤市（森本）",
+        regionClass: "kanazawa",
+        title: "金箔製造科技與現代品質管理",
+        activities: "株式會社箔一總店專業導覽與工廠研習，觀摩金箔打製工序與企業化營運。",
+        purpose: "【金箔製造科技與品質管理】至日本金箔龍頭企業，學習 1 萬分之 1 毫米極致工藝、現代化品管系統，以及跨足美妝、食品與建築的商品化進程。",
+        spots: [
+          { name: "箔一 本店 箔巧館", query: "箔一 本店 箔巧館" }
+        ]
+      },
+      {
+        day: "Day 12",
+        date: "116/07/01",
+        shortDate: "07/01",
+        area: "金澤市（東山）",
+        regionClass: "kanazawa",
+        title: "傳統工藝 × 觀光之品牌昇華",
+        activities: "東山・東茶屋街區域（工藝 × 觀光實地考察）、金澤市立安江金箔工藝館訪問。",
+        purpose: "【傳統工藝昇華為觀光經濟之品牌設計】以東茶屋街歷史街區為模型，分析傳統工藝如何轉譯為具高附加價值的文化觀光體驗。",
+        spots: [
+          { name: "東茶屋街 (ひがし茶屋街)", query: "ひがし茶屋街 金沢" },
+          { name: "金澤市立安江金箔工藝館", query: "金沢市立安江金箔工芸館" }
+        ]
+      },
+      {
+        day: "Day 13",
+        date: "116/07/02",
+        shortDate: "07/02",
+        area: "金澤市（大手町）",
+        regionClass: "kanazawa",
+        title: "加賀象嵌的金屬鑲嵌技法與社群傳承",
+        activities: "宗桂會館（公益財團法人宗桂会）加賀象嵌專門美術館專業導覽，並與加賀象嵌作家工坊交流。",
+        purpose: "【加賀象嵌之金屬鑲嵌技法與社群傳承】調查金澤舉世聞名之金屬加飾技術「加賀象嵌」工藝細節與職人間的技藝傳承網絡。",
+        spots: [
+          { name: "宗桂會館", query: "宗桂会館 金沢市" }
+        ]
+      },
+      {
+        day: "Day 14",
+        date: "116/07/03",
+        shortDate: "07/03",
+        area: "金澤市",
+        regionClass: "kanazawa",
+        title: "自由調查與成果資料整理日",
+        activities: "自由時間：為 Day 16 成果發表會整理個人研究資料、補充拍攝畫面，或於金澤市內進行深度自主調查。",
+        purpose: "補強研究缺口，將 13 天來的田野筆記轉化為結構化簡報觀點。",
+        spots: [
+          { name: "長町武家屋敷跡（自主調查參考）", query: "長町武家屋敷跡 金沢" }
+        ]
+      },
+      {
+        day: "Day 15",
+        date: "116/07/04",
+        shortDate: "07/04",
+        area: "金澤市",
+        regionClass: "kanazawa",
+        title: "成果發表準備及業師一對一面談",
+        activities: "彙整翌日成果發表會之簡報資料，進行最終學習內容盤點，並繳交書面報告及個人紀錄片初稿。",
+        purpose: "透過隨團業師指導打磨簡報邏輯與跨文化表達，確保台日交流發表品質。",
+        spots: [
+          { name: "金澤市中心研習場地", query: "金沢市役所" }
+        ]
+      },
+      {
+        day: "Day 16",
+        date: "116/07/05",
+        shortDate: "07/05",
+        area: "金澤市",
+        regionClass: "kanazawa",
+        title: "臺日青年職人的現實課題對話 ＋ 成果發表會",
+        activities: "與石川縣傳統青年會議座談會交流；舉辦 15 日研修最終成果發表會。",
+        purpose: "【臺日青年職人之真實課題對話與資料總括發表】以 15 日研修累積成果進行公開發表，並與石川在地青年職人深度探討傳統工藝繼承與創新難題。",
+        spots: [
+          { name: "石川縣金澤市", query: "石川県金沢市" }
+        ]
+      },
+      {
+        day: "Day 17",
+        date: "116/07/06",
+        shortDate: "07/06",
+        area: "金澤市 → 臺灣",
+        regionClass: "kanazawa",
+        title: "滿載而歸：金澤市內 → 小松機場 → 返回臺灣",
+        activities: "整理行囊，由金澤市區前往小松機場搭機返回臺灣，圓滿完成 17 日金澤職人夢海外見習。",
+        purpose: "返國後持續完成教育部青年發展署規定之成果報告與社群推廣任務。",
+        spots: [
+          { name: "小松機場 (Komatsu Airport)", query: "小松空港" }
+        ]
+      }
+    ];
+
+    let selectedDate = "ALL";
+
+    function renderItinerary() {
+      const pillsContainer = document.getElementById("datePills");
+      const listContainer = document.getElementById("itineraryList");
+
+      let pillsHTML = `
+        <button type="button" class="date-btn ${selectedDate === 'ALL' ? 'active' : ''}" onclick="selectDate('ALL')">
+          <span class="day-num">全部</span>
+          <span>17日總覽</span>
+        </button>
+      `;
+
+      itineraryData.forEach(item => {
+        pillsHTML += `
+          <button type="button" class="date-btn ${selectedDate === item.date ? 'active' : ''}" onclick="selectDate('${item.date}')">
+            <span class="day-num">${item.day}</span>
+            <span>${item.shortDate}</span>
+          </button>
+        `;
+      });
+      pillsContainer.innerHTML = pillsHTML;
+
+      const filtered = selectedDate === "ALL"
+        ? itineraryData
+        : itineraryData.filter(d => d.date === selectedDate);
+
+      listContainer.innerHTML = filtered.map(item => `
+        <article class="day-card ${item.regionClass}">
+          <div class="day-meta">
+            <span class="day-badge">${item.day}｜${item.date}</span>
+            <span class="area-tag">📍 ${item.area}</span>
+          </div>
+          <h3 class="day-title">${item.title}</h3>
+          <p class="day-activities"><strong>行程內容：</strong>${item.activities}</p>
+          <div class="day-purpose"><strong>🎯 學習目的：</strong>${item.purpose}</div>
+          <div class="spot-links">
+            ${item.spots.map(s => `
+              <a class="btn-link btn-map" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.query)}" target="_blank" rel="noopener">
+                🗺️ ${s.name}
+              </a>
+            `).join("")}
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function selectDate(dateStr) {
+      selectedDate = dateStr;
+      renderItinerary();
+    }
+
+    // 2. 行前準備與申請檢核清單（localStorage）
+    const defaultChecklist = [
+      { id: "c1", category: "申請資格與文件", text: "確認中華民國國籍且年齡符合 18–30 歲規定", done: false },
+      { id: "c2", category: "申請資格與文件", text: "準備語言能力證明（日語 JLPT N4 以上或英語 CEFR B1 以上）", done: false },
+      { id: "c3", category: "申請資格與文件", text: "撰寫計畫申請動機（突出工藝熱忱、社群經營或影像紀錄能力）", done: false },
+      { id: "c4", category: "行前培訓與企畫", text: "預留出國前約 14 日「第 1 次行前培訓」（4 小時，安全與分組）", done: false },
+      { id: "c5", category: "行前培訓與企畫", text: "預留出國前約 7 日「第 2 次行前培訓」（4 小時，工房禮儀與護具）", done: false },
+      { id: "c6", category: "行前培訓與企畫", text: "擬定「個人紀錄片拍攝企畫」腳本與拍攝器材清單", done: false },
+      { id: "c7", category: "工房實作與防護", text: "準備適合漆器／陶藝工房實作之服裝與護具（留意漆液過敏防護）", done: false },
+      { id: "c8", category: "工房實作與防護", text: "詳閱各工藝工房攝影限制規範（尊重職人智慧財產權）", done: false },
+      { id: "c9", category: "證件保險與其他", text: "確認護照效期（6 個月以上）及日本入境所需簽證／Visit Japan Web", done: false },
+      { id: "c10", category: "證件保險與其他", text: "投保至少 200–300 萬元意外險及 20–50 萬元海外醫療險（預算 1,800 元）", done: false }
+    ];
+
+    let checklistState = JSON.parse(localStorage.getItem("kanazawa_checklist_v1")) || defaultChecklist;
+
+    function saveChecklist() {
+      localStorage.setItem("kanazawa_checklist_v1", JSON.stringify(checklistState));
+    }
+
+    function renderChecklist() {
+      const container = document.getElementById("checklistContainer");
+      const categories = ["申請資格與文件", "行前培訓與企畫", "工房實作與防護", "證件保險與其他"];
+
+      container.innerHTML = categories.map(cat => {
+        const items = checklistState.filter(i => i.category === cat);
+        return `
+          <div class="check-group">
+            <h4>${cat}</h4>
+            ${items.map(item => `
+              <label class="check-item ${item.done ? 'checked' : ''}">
+                <input type="checkbox" ${item.done ? 'checked' : ''} onchange="toggleCheck('${item.id}')" />
+                <span>${item.text}</span>
+              </label>
+            `).join("")}
+          </div>
+        `;
+      }).join("");
+
+      const total = checklistState.length;
+      const doneCount = checklistState.filter(i => i.done).length;
+      const pct = total === 0 ? 0 : Math.round((doneCount / total) * 100);
+      document.getElementById("progressText").textContent = `${doneCount} / ${total} (${pct}%)`;
+      document.getElementById("progressBar").style.width = `${pct}%`;
+    }
+
+    function toggleCheck(id) {
+      checklistState = checklistState.map(item =>
+        item.id === id ? { ...item, done: !item.done } : item
+      );
+      saveChecklist();
+      renderChecklist();
+    }
+
+    function addCheckItem(e) {
+      e.preventDefault();
+      const category = document.getElementById("newCheckCategory").value;
+      const textInput = document.getElementById("newCheckText");
+      const text = textInput.value.trim();
+      if (!text) return;
+
+      checklistState.push({
+        id: "c_" + Date.now(),
+        category,
+        text,
+        done: false
+      });
+      textInput.value = "";
+      saveChecklist();
+      renderChecklist();
+      showToast("已新增準備項目！");
+    }
+
+    function openResetModal() {
+      document.getElementById("resetModal").classList.add("open");
+    }
+
+    function closeResetModal() {
+      document.getElementById("resetModal").classList.remove("open");
+    }
+
+    function confirmResetChecklist() {
+      checklistState = JSON.parse(JSON.stringify(defaultChecklist));
+      saveChecklist();
+      renderChecklist();
+      closeResetModal();
+      showToast("已重置為簡章預設的 10 項檢核清單");
+    }
+
+    // 3. 預算與收支記帳（localStorage）
+    function toggleGrantDetails() {
+      const grid = document.getElementById("grantDetailsGrid");
+      grid.style.display = grid.style.display === "none" ? "grid" : "none";
+    }
+
+    const defaultLedger = [
+      { id: "l1", date: "簡章基準", type: "income", category: "機票交通", note: "青年自理獎勵金－來回經濟艙機票額度", amount: 20000 },
+      { id: "l2", date: "簡章基準", type: "income", category: "生活零用金", note: "青年自理獎勵金－17日青年零用金額度", amount: 5217 },
+      { id: "l3", date: "簡章基準", type: "income", category: "旅平險與醫療險", note: "青年自理獎勵金－海外意外及醫療險額度", amount: 1800 }
+    ];
+
+    let ledgerState = JSON.parse(localStorage.getItem("kanazawa_ledger_v1")) || defaultLedger;
+
+    function saveLedger() {
+      localStorage.setItem("kanazawa_ledger_v1", JSON.stringify(ledgerState));
+    }
+
+    function renderLedger() {
+      const tbody = document.getElementById("ledgerBody");
+      let totalIn = 0;
+      let totalOut = 0;
+
+      tbody.innerHTML = ledgerState.map(item => {
+        if (item.type === "income") totalIn += item.amount;
+        else totalOut += item.amount;
+
+        return `
+          <tr>
+            <td>${item.date}</td>
+            <td>${item.type === "income" ? "收入/補助" : "支出"}</td>
+            <td>${item.category}</td>
+            <td>${item.note}</td>
+            <td class="${item.type === 'income' ? 'amount-in' : 'amount-out'}">
+              ${item.type === "income" ? "+" : "-"} NT$ ${item.amount.toLocaleString()}
+            </td>
+            <td>
+              <button type="button" class="btn-danger" onclick="deleteLedger('${item.id}')">刪除</button>
+            </td>
+          </tr>
+        `;
+      }).join("");
+
+      const balance = totalIn - totalOut;
+      document.getElementById("totalExpense").textContent = `NT$ ${totalOut.toLocaleString()}`;
+      const balEl = document.getElementById("budgetBalance");
+      balEl.textContent = `NT$ ${balance.toLocaleString()}`;
+      balEl.style.color = balance < 0 ? "var(--vermilion)" : "var(--gold-primary)";
+    }
+
+    function addLedgerItem(e) {
+      e.preventDefault();
+      const type = document.getElementById("ledgerType").value;
+      const category = document.getElementById("ledgerCategory").value;
+      const note = document.getElementById("ledgerNote").value.trim();
+      const amount = parseInt(document.getElementById("ledgerAmount").value, 10);
+      if (!note || isNaN(amount) || amount <= 0) return;
+
+      const today = new Date().toLocaleDateString("zh-TW", { month: "2-digit", day: "2-digit" });
+      ledgerState.push({
+        id: "l_" + Date.now(),
+        date: today,
+        type,
+        category,
+        note,
+        amount
+      });
+
+      document.getElementById("ledgerNote").value = "";
+      document.getElementById("ledgerAmount").value = "";
+      saveLedger();
+      renderLedger();
+      showToast("已新增一筆收支明細！");
+    }
+
+    function deleteLedger(id) {
+      ledgerState = ledgerState.filter(i => i.id !== id);
+      saveLedger();
+      renderLedger();
+      showToast("已刪除該筆明細");
+    }
+
+    // 4. 申請動機與見習心得筆記欄（localStorage）
+    const defaultNotes = [
+      {
+        id: "n1",
+        tag: "申請書靈感",
+        title: "台日傳統工藝傳承制度對照切入點",
+        content: "本次見習涵蓋「公設育成設施（九谷燒技術中心、山中漆器技術中心、卯辰山工藝工房）」與「百年民營窯元／企業（箔一、錦山窯）」。申請書可聚焦於：如何借鏡日本將師徒制『技術語言化、手冊化』的經驗，回饋臺灣在地工藝品牌轉型。",
+        updatedAt: "預設範例"
+      },
+      {
+        id: "n2",
+        tag: "紀錄片拍攝企畫",
+        title: "個人紀錄片分鏡構想（行前第2次培訓討論用）",
+        content: "主軸：《1萬分之1毫米的堅持》— 記錄職人手部特寫（赤繪細描、轆轤車削、貼金箔）與臺灣青年在工房實作時的跨文化對話。注意：進入各工房前須先確認攝影許可區域。",
+        updatedAt: "預設範例"
+      }
+    ];
+
+    let notesState = JSON.parse(localStorage.getItem("kanazawa_notes_v1")) || defaultNotes;
+
+    function saveNotes() {
+      localStorage.setItem("kanazawa_notes_v1", JSON.stringify(notesState));
+    }
+
+    function renderNotes() {
+      const list = document.getElementById("notesList");
+      if (notesState.length === 0) {
+        list.innerHTML = `<p style="color:var(--text-muted);font-size:0.9rem;">目前尚無筆記，請在上方輸入你的申請靈感或見習紀錄。</p>`;
+        return;
+      }
+
+      list.innerHTML = notesState.map(n => `
+        <div class="note-card">
+          <div>
+            <div class="note-card-header">
+              <span class="note-tag">${n.tag}</span>
+              <button type="button" class="btn-danger" onclick="deleteNote('${n.id}')">刪除</button>
+            </div>
+            <h4 style="margin:0.5rem 0 0.4rem;font-size:1.05rem;">${n.title}</h4>
+            <p class="note-body">${n.content}</p>
+          </div>
+          <div class="note-footer">
+            <span>時間：${n.updatedAt}</span>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function addNote(e) {
+      e.preventDefault();
+      const tag = document.getElementById("noteTag").value;
+      const title = document.getElementById("noteTitle").value.trim();
+      const content = document.getElementById("noteContent").value.trim();
+      if (!title || !content) return;
+
+      const now = new Date().toLocaleString("zh-TW", {
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+      });
+
+      notesState.unshift({
+        id: "n_" + Date.now(),
+        tag,
+        title,
+        content,
+        updatedAt: now
+      });
+
+      document.getElementById("noteTitle").value = "";
+      document.getElementById("noteContent").value = "";
+      saveNotes();
+      renderNotes();
+      showToast("筆記已儲存！");
+    }
+
+    function deleteNote(id) {
+      notesState = notesState.filter(n => n.id !== id);
+      saveNotes();
+      renderNotes();
+      showToast("筆記已刪除");
+    }
+
+    function exportNotes() {
+      if (notesState.length === 0) {
+        showToast("目前沒有可匯出的筆記內容！");
+        return;
+      }
+      const text = notesState.map(n =>
+        `【${n.tag}】${n.title} (${n.updatedAt})\n${n.content}\n----------------------------------------`
+      ).join("\n\n");
+
+      const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "M-2-8_金澤職人夢_申請與見習筆記.txt";
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast("已匯出全部筆記 (.txt)！");
+    }
+
+    // 初始化渲染
+    renderItinerary();
+    renderChecklist();
+    renderLedger();
+    renderNotes();
+  </script>
+</body>
+</html>
